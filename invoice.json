@@ -1,0 +1,52 @@
+
+        images: {
+          // logo: "https://public.easyinvoice.cloud/img/logo_en_original.png",
+          background: fs.readFileSync(
+            `${__dirname}/../../public/invoice/inv.jpg`,
+            "base64"
+          ),
+          // background: "https://public.easyinvoice.cloud/img/watermark-draft.jpg",
+        },
+        sender: {
+          company: "PT DIGIPEDIA",
+          address: "Perumahan Grand Hannan Jl. Mayjen Sungkono No.26, Buring",
+          zip: "Kec. Kedungkandang, Kota Malang, Jawa Timur - 65136",
+          city: "Malang",
+          country: "Indonesia",
+        },
+        client: {
+          company: "Client Corp",
+          address: "Clientstreet 456",
+          zip: "4567 CD",
+          city: "Clientcity",
+          country: "Clientcountry",
+        },
+        information: {
+          number: "2022.0001",
+          date: "1.1.2022",
+          "due-date": "15.1.2022",
+        },
+        products: [
+          {
+            quantity: "2",
+            description: "Test1",
+            "tax-rate": 6,
+            price: 33.87,
+          },
+          {
+            quantity: "4",
+            description: "Test2",
+            "tax-rate": 21,
+            price: 10.45,
+          },
+        ],
+        "bottom-notice": "Kindly pay your invoice within 15 days.",
+        settings: {
+          currency: "USD",
+          "tax-notation": "vat",
+          "margin-top": 25,
+          "margin-right": 25,
+          "margin-left": 25,
+          "margin-bottom": 25,
+        },
+     
